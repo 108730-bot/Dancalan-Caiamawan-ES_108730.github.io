@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancalan Caimawan Elementary School</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Top Government Bar */
+        .top-bar {
+            background-color: #00205B; /* DepEd Navy Blue */
+            color: #ffffff;
+            text-align: center;
+            padding: 8px 20px;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main Header */
+        .main-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 5%;
+            background-color: #ffffff;
+            border-bottom: 4px solid #FFD100; /* DepEd Gold */
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-placeholder {
+            width: 90px;
+            height: 90px;
+            background-color: #e9ecef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #00205B;
+            border: 2px dashed #00205B;
+            text-align: center;
+        }
+
+        .school-info h1 {
+            font-size: 34px;
+            color: #00205B;
+            margin: 0 0 5px 0;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .school-info p {
+            margin: 0;
+            font-size: 16px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #00205B;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .nav-link {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #003380;
+            color: #FFD100;
+        }
+
+        /* Main Content Layout */
+        .container {
+            display: flex;
+            gap: 30px;
+            padding: 40px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Left Column: Welcome & Projects */
+        .main-content {
+            flex: 2;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid #00205B;
+        }
+
+        .card h2 {
+            color: #00205B;
+            margin-top: 0;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .project-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .project-list li {
+            padding: 15px;
+            background-color: #f8f9fa;
+            margin-bottom: 10px;
+            border-left: 4px solid #FFD100;
+            border-radius: 4px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #00205B;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Right Column: Announcements & Quick Links */
+        .sidebar {
+            flex: 1;
+        }
+
+        .announcement-item {
+            margin-bottom: 20px;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background-color: #00205B;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .quick-links a {
+            display: block;
+            padding: 12px 15px;
+            background-color: #f8f9fa;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .quick-links a:hover {
+            background-color: #e2e6ea;
+            color: #00205B;
+            border-left: 4px solid #FFD100;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #00205B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top DepEd Bar -->
+    <div class="top-bar">
+        Department of Education | Region IV-A CALABARZON | Division of Quezon 
+    </div>
+
+    <!-- Main Header -->
+    <div class="main-header">
+        <div class="logo-section">
+            <div class="logo-placeholder">Insert<br>School Logo</div>
+            <div class="school-info">
+                <h1>Dancalan Caimawan Elementary School</h1>
+                <p>Data-Driven Instruction • Transparent Operations • Safe Learning</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-item"><a href="#" class="nav-link">Home</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">About Us</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">Announcements</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">Transparency & MOOE</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">Project SAFE LEARN</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">Research & LAC</a></div>
+        <div class="nav-item"><a href="#" class="nav-link">Contact Us</a></div>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="container">
+        
+        <!-- Left Column -->
+        <div class="main-content">
+            <div class="card">
+                <h2>Welcome Message</h2>
+                <p>Welcome to the official portal of Dancalan Caimawan Elementary School. Since assuming leadership on January 8, 2025, our administration has been committed to fostering a secure, academically rigorous, and transparent educational environment.</p>
+                <p>We invite all parents, stakeholders, and community members to explore our continuous improvements in infrastructure, academic research, and student welfare.</p>
+                <br>
+                <strong>Jan Christopher R. Cafe</strong><br>
+                <em>Principal I</em>
+            </div>
+
+            <div class="card">
+                <h2>Infrastructure & Safety Initiatives</h2>
+                <ul class="project-list">
+                    <li>
+                        <span class="project-title">Project SAFE LEARN</span>
+                        Ongoing perimeter fence construction and comprehensive hazard mapping to ensure maximum security for our learners and personnel.
+                    </li>
+                    <li>
+                        <span class="project-title">Campus Accessibility Improvement</span>
+                        Recent completion of the 4.5 meters Covered Pathwalk, providing safe and weather-protected transit within the school grounds.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="sidebar">
+            <div class="card">
+                <h2>Latest Announcements</h2>
+                
+                <div class="announcement-item">
+                    <span class="date-badge">March 29, 2026</span>
+                    <strong>33rd Graduation Ceremony</strong>
+                    <p style="font-size: 14px; color: #666; margin-top: 5px;">Join us in celebrating the achievements of our graduating class. Guest of honor details and certificates to follow.</p>
+                </div>
+
+                <div class="announcement-item">
+                    <span class="date-badge">Ongoing</span>
+                    <strong>MOOE Liquidation Updates</strong>
+                    <p style="font-size: 14px; color: #666; margin-top: 5px;">Monthly financial transparency reports and school performance data are available at the Principal's office.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Quick Links</h2>
+                <div class="quick-links">
+                    <a href="#">Enrollment Requirements</a>
+                    <a href="#">School Evacuation Plan</a>
+                    <a href="#">Request for Records</a>
+                    <a href="#">Citizen's Charter</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2026 Dancalan Caimawan Elementary School. All Rights Reserved. <br>
+        Department of Education | Republic of the Philippines
+    </div>
+
+</body>
+</html>
